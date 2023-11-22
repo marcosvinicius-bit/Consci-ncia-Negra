@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+body{
+    width: 95%;
+    color: rgb(0, 0, 0);
+    background-image: url(https://fmp.edu.br/wp-content/uploads/2021/11/fmp-origem-dia-da-consciencia-negra-scaled.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family:sans-serif;
+}
+h1{
+    text-align: center;
+    margin: 50px;
+}
+h2{
+    margin: 8%;
+}
+
+
+p{
+    margin: 4%;
+}
+
+
+div{
+    text-align: center;
+    margin: 50px;
+}
+
+
+img{
+    width: 200px;
+    position: absolute;
+    animation-name: HomemNegro;
+    animation-duration: 7s;
+    animation-timing-function:linear;
+    
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode:forwards;
+    animation-play-state: running;
+}
+
+@keyframes HomemNegro{
+    from{
+        transform: translateX(0);
+
+    }
+
+    to{
+        transform: translateX(calc(90vw));
+    }
+}
+
